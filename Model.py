@@ -17,13 +17,11 @@ import csv#Implements classes to read and write tabular data in CSV format.
 import requests#Data url.
 import bs4 #Beautiful Soup. Necessary for web scrapping.
 
-
 num_of_agents = 20 #Controls how many agents there are.
 num_of_iterations = 100 #Controls the number of iterartions. 
 neighbourhood = 30 #Range for sharing.
 agents = [] #List for agents. Empty so that coordinates can be added.
 environment=[] #List for environment coordinates. Required for shifting the data into a 2D list. 
-
 
 def getTimeMS():#Gives the time of how long a section of code takes to run.
      dt = datetime.datetime.now()
@@ -38,7 +36,6 @@ td_ys = soup.find_all(attrs={"class" : "y"})
 td_xs = soup.find_all(attrs={"class" : "x"})
 #Print(td_ys)
 #Print(td_xs) 
-
 
 #Csv reading code which is reading in the in.txt file.
 f = open('in.txt', newline='') 
@@ -99,7 +96,6 @@ def gen_function(b = [0]):#Stopping condition. For example when a < number of it
        yield a			
        a = a + 1 
        
-
 #Function that is connected to the menu of which has an action that when clicked runs the entire event based programming model.
 def run():
     animation = matplotlib.animation.FuncAnimation(fig, update,  frames=gen_function, repeat=False)
