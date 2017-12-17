@@ -59,21 +59,3 @@ class Agent():#Agents constructor including environment, agents, neighbourhood a
                 self.store = ave
                 agent.store = ave
                 #Print("sharing " + str(dist) + " " + str(ave)) only necessary to check it is working
-                
-  
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

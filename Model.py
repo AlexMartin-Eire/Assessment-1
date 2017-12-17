@@ -119,24 +119,3 @@ model_menu.add_command(label="Run model", command=run)
 end = getTimeMS()#End timer. Print result.
 print("time = " + str(end - start))
 tkinter.mainloop()#Sets the GUI waiting for events.
-
-
-
-
-
-
-
-
-               
-
-
-
-
-
-
-
-
-
-
-
-
